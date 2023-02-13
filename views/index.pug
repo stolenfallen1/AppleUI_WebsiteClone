@@ -1,0 +1,123 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/styles.css") 
+        script(src="main.js")
+        title=title
+    body 
+
+        header 
+            .container 
+                nav.nav 
+                    // MOBILE NAVIGATIONS
+                    ul.nav-list.nav-list-mobile 
+                        li.nav-item    
+                            .mobile-menu 
+                                span.line.line-top
+                                span.line.line-bottom
+                        li.nav-item 
+                            a(href="index.pug" class="nav-link nav-link-apple")
+                        li.nav-item
+                            a(href="index.pug" class="nav-link nav-link-bag")
+
+                    // LARGER SCREEN SIZE
+                    ul.nav-list.nav-list-larger 
+                        li.nav-item.nav-item-hidden 
+                            a(href="index.pug" class="nav-link nav-link-apple")
+                        // NAVIGATION ITEMS
+                        li.nav-item 
+                            a(href="index.pug" class="nav-link") Store
+                        li.nav-item 
+                            a(href="index.pug" class="nav-link") Mac
+                        li.nav-item 
+                            a(href="index.pug" class="nav-link") iPad
+                        li.nav-item 
+                            a(href="index.pug" class="nav-link") iPhone
+                        li.nav-item 
+                            a(href="index.pug" class="nav-link") Watch
+                        li.nav-item 
+                            a(href="index.pug" class="nav-link") AirPods
+                        li.nav-item 
+                            a(href="index.pug" class="nav-link") TV & Home
+                        li.nav-item 
+                            a(href="index.pug" class="nav-link") Support
+                        li.nav-item 
+                            a(href="index.pug" class="nav-link nav-link-search")
+                        li.nav-item.nav-item-hidden
+                            a(href="index.pug" class="nav-link nav-link-bag")
+        // MAIN SECTION 1
+        section.hero.iphone-14-pro
+            .container 
+                .title 
+                    h2.title-heading iPhone 14 Pro
+                    h3.title-sub-heading Pro. Beyond.
+                .cta 
+                    a(href="#" class="cta-link") Learn More >
+                    a(href="#" class="cta-link") Buy >
+        // MAIN SECTION 2 
+        section.hero.iphone-14
+            .container 
+                .title.title-dark
+                    h2.title-heading iPhone 14
+                    h3.title-sub-heading Big and bigger
+                .cta 
+                    a(href="#" class="cta-link cta-link-darker") Learn More >
+                    a(href="#" class="cta-link cta-link-darker") Buy >
+
+        section.hero.homepod 
+            .container 
+                .title 
+                    h2.title-heading HomePod
+                    h3.title-sub-heading Profound Sound
+                .cta 
+                    a(href="#" class="cta-link") Learn More >
+                    a(href="#" class="cta-link") Buy >
+
+
+        // GRID AREA SECTION 
+        .grid-container 
+            .grid-row 
+                .card
+                    // PICTURE HEADING
+                    .card-heading
+                    p.grid-text Get up to 3% Daily Cash back with every purchase.
+                    .cta-grid  
+                        a(href="#" class="cta-grid-link cta-grid-darker") Apply Now >
+            .grid-row 
+                .watch
+                    // PICTURE HEADING
+                    .watch-heading
+                    p.grid-text.grid-text-lighter A healthy leap ahead.
+                    .cta-grid  
+                        a(href="#" class="cta-grid-link") Buy >
+            .grid-row 
+                .k12
+                    // PICTURE HEADING
+                    .k12-heading
+                    p.grid-text Products and resources designed to inspire learners.
+                    .cta-grid  
+                        a(href="#" class="cta-grid-link cta-grid-darker") Learn More >
+            .grid-row 
+                .airpods 
+                    h1.multi-heading AirPods Pro
+                    p.grid-text.grid-text-lighter Rebuilt from the sound up.
+                    p.grid-text-span Check back later for availability
+                    .cta-grid  
+                        a(href="#" class="cta-grid-link") Buy >
+            .grid-row 
+                .macbook-pro 
+                    h1.multi-heading Macbook Pro
+                    p.grid-text.grid-text-lighter Supercharged by M2 Pro and M2 Max.
+                    p.grid-text-span Check back later for availability
+                    .cta-grid  
+                        a(href="#" class="cta-grid-link") View Pricing >
+            .grid-row 
+                .macmini 
+                    h1.multi-heading Mac mini
+                    p.grid-text.grid-text-lighter Supercharged by M2 and M2 Pro.
+                    p.grid-text-span Check back later for availability
+                    .cta-grid  
+                        a(href="#" class="cta-grid-link") View Pricing >

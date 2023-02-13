@@ -1,0 +1,239 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 0 10px;
+    border-bottom: 0.6rem solid #FFF;
+}
+.grid-row:nth-child(1) {
+    grid-row: span 2;
+}
+.grid-row:nth-child(5) {
+    grid-row: span 2;
+}
+.card {
+    background: url("/grid-images/cardlarge.jpeg") center no-repeat;
+    background-size: cover;
+    height: 100%;
+    border-radius: 2px;
+}
+.card-heading {
+    background: url("/grid-images/cardheading.png") center no-repeat;
+    height: 7rem;
+}
+.watch {
+    background: url("/grid-images/watchlarge.jpeg") center no-repeat;
+    background-size: cover;
+    height: 25rem;
+    border-radius: 2px;
+}
+.watch-heading {
+    background: url("/grid-images/watch-heading.png") center no-repeat;
+    height: 6rem;
+}
+.k12 {
+    background: url("/grid-images/k12large.jpeg") center no-repeat;
+    background-size: cover;
+    height: 25rem;
+    border-radius: 2px;
+}
+.k12-heading {
+    background: url("/grid-images/k12heading.png") center no-repeat;
+    height: 6rem;
+}
+.airpods {
+    background: url("/grid-images/airpodslarge.jpg") center no-repeat;
+    background-size: cover;
+    height: 25rem;
+    border-radius: 2px;
+}
+.macbook-pro {
+    background: url("/grid-images/macbooklarge.jpg") center no-repeat;
+    background-size: cover;
+    height: 100%;
+    border-radius: 2px;
+}
+.macmini {
+    background: url("/grid-images/macminilarge.jpg") center no-repeat;
+    background-size: cover;
+    height: 25rem;
+    border-radius: 2px;
+}
+.multi-heading {
+    font-size: 1.85rem;
+    color: #FFF;
+    padding: 15px 0;
+}
+.grid-text,
+.cta-grid,
+.multi-heading, 
+.grid-text-span {
+    text-align: center;
+}
+.grid-text-lighter {
+    color: #FFF;
+    text-align: center;
+}
+.grid-text {
+    font-size: 1.5rem;
+}
+.grid-text-span {
+    color: #4b4747;
+    font-size: 1.15rem;
+    font-style: italic;
+}
+.cta-grid-link {
+    font-size: 1.35rem;
+    display: inline-block;
+    padding-top: 0.5rem;
+    transition: opacity 0.4s;
+    color: #66BBFF;
+}
+.cta-grid-link:hover {
+    border-bottom: 2px solid #66BBFF;
+    opacity: 0.75;
+}
+.cta-grid-darker {
+    color: #0070C9;
+}
+.cta-grid-darker:hover {
+    border-bottom: 2px solid #0070C9;
+    opacity: 0.75;
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 1225px) {
+    .grid-text {
+        font-size: 1.25rem;
+    }
+    .grid-text-span {
+        font-size: 1rem;
+    }
+    .cta-grid-link {
+        font-size: 1.15rem;
+    }
+}
+@media screen and (max-width: 1068px) {
+    .card {
+        background: url("/grid-images/cardmedium.jpeg") center no-repeat;
+        background-size: cover;
+        border-radius: 2px;
+    }
+    .watch {
+        background: url("/grid-images/watchmedium.jpeg") center no-repeat;
+        background-size: cover;
+        border-radius: 2px;
+    }
+    .k12 {
+        background: url("/grid-images/k12medium.jpeg") center no-repeat;
+        background-size: cover;
+        border-radius: 2px;
+    }
+    .airpods {
+        background: url("/grid-images/airpodsmedium.jpg") center no-repeat;
+        background-size: cover;
+        border-radius: 2px;
+    }
+    .macbook-pro {
+        background: url("/grid-images/macbookmedium.jpg") center no-repeat;
+        background-size: cover;
+        border-radius: 2px;
+    }
+    .macmini {
+        background: url("/grid-images/macminimedium.jpg") center no-repeat;
+        background-size: cover;
+        border-radius: 2px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-row:nth-child(1) {
+        grid-row: initial;
+    }
+    .grid-row:nth-child(5) {
+        grid-row: initial;
+    }
+    .card, 
+    .watch,
+    .k12, 
+    .airpods,
+    .macbook-pro,
+    .macmini {
+        height: 35rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card, 
+    .watch,
+    .k12, 
+    .airpods,
+    .macbook-pro,
+    .macmini {
+        height: 40rem;
+    }
+    .card-heading {
+        background: url("/grid-images/cardheading.png") center no-repeat;
+        height: 8rem;
+    }
+    .watch-heading {
+        background: url("/grid-images/watch-heading.png") center no-repeat;
+        height: 8rem;
+    }
+    .k12-heading {
+        background: url("/grid-images/k12heading.png") center no-repeat;
+        height: 8rem;
+    }
+    .multi-heading {
+        padding-top: 45px;
+        font-size: 2.05rem;
+    }
+    .grid-text {
+        font-size: 1.45rem;
+    }
+    .grid-text-span {
+        font-size: 1.15rem;
+    }
+    .cta-grid-link {
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .card, 
+    .watch,
+    .k12, 
+    .airpods,
+    .macbook-pro,
+    .macmini {
+        height: 30rem;
+    }
+    .card-heading {
+        background: url("/grid-images/cardheading.png") center no-repeat;
+        height: 6rem;
+    }
+    .watch-heading {
+        background: url("/grid-images/watch-heading.png") center no-repeat;
+        height: 6rem;
+    }
+    .k12-heading {
+        background: url("/grid-images/k12heading.png") center no-repeat;
+        height: 6rem;
+    }
+    .multi-heading {
+        padding-top: 45px;
+        font-size: 1.95rem;
+    }
+    .grid-text {
+        font-size: 1.25rem;
+    }
+    .grid-text-span {
+        font-size: 1.05rem;
+    }
+    .cta-grid-link {
+        font-size: 1.05rem;
+    }
+}
