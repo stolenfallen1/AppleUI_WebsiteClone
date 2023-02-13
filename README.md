@@ -5,6 +5,6 @@ Apple UI, website clone using PUG
 - If you wish to use this project, first install node_modules 
 
 # Use this following commands
-npm init -y
-npm install express
-npm install pug
+- npm init -y
+- npm install express
+- npm install pug
